@@ -151,7 +151,7 @@ def process_token(uid, password, index):
         'Expect': "100-continue",
         'X-Unity-Version': "2018.4.11f1",
         'X-GA': "v1 1",
-        'ReleaseVersion': "OB49"
+        'ReleaseVersion': "OB50"
     }
     edata = bytes.fromhex(hex_encrypted_data)
 
@@ -178,7 +178,7 @@ def process_token(uid, password, index):
                 
                 return {
                     "status": "live",
-                    "region": region,
+                    "server": region,
                     "serverUrl": server_url,
                     "token": response_dict.get("token", "N/A")
                 }
